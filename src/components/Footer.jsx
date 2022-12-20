@@ -1,10 +1,8 @@
 import React from "react";
 
-const year = new Date.getFullYear();
 function Footer() {
-  return (
-    <div className="header">Keeper</div>
-  );
+  const year = new Date().getFullYear();
+  return <div className="footer">CopyRight &copy; {year}</div>;
 }
 
 export default Footer
