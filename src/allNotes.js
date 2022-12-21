@@ -3,6 +3,7 @@ const notes = [
   { title: "Title2", content: "This is content of title2 note." },
   { title: "Title3", content: "This is content of title3 note." },
   { title: "Title4", content: "This is content of title4 note." },
+  { title: "Title5", content: "This is content of title5 note." },
 ];
 
 export default notes;

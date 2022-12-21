@@ -15,8 +15,7 @@ function App() {
     <div>
       <Header />
       <div className="noteContainer">
-      {allNotes.map(noteCard)}
-
+        {allNotes.map(noteCard)}
       </div>
       <Footer />
     </div>
