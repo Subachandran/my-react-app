@@ -2,15 +2,21 @@ import React from "react";
 import Header from "./Header";
 import Note from './Note'
 import Footer from './Footer'
+import allNotes from '../allNotes'
+
+function noteCard(noteInfo, index) {
+  return (
+    <Note key={index} title={noteInfo.title} content={noteInfo.content} />
+  )
+}
 
 function App() {
   return (
     <div>
       <Header />
       <div className="noteContainer">
-        <Note title="Title1" content="Content1" />
-        <Note title="Title2" content="Content2" />
-        <Note title="Title3" content="Content3" />
+      {allNotes.map(noteCard)}
+
       </div>
       <Footer />
     </div>
